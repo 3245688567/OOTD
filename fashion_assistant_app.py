@@ -53,7 +53,8 @@ if uploaded_file:
         # Get CLIP embedding
         clip_input = clip_preprocess(cropped).unsqueeze(0).to("cpu")
         with torch.no_grad():
-            features = clip_model.encode_image(clip_input).numpy().astype("float32")
+            features = clip_model.encode_image(clip_input).detach().cpu().numpy().astype("float32")
+            features = features.reshape(1, -1)  # Ensure correct shape for FAISS
 
         # FAISS similarity search
         D, I = faiss_index.search(features, k=3)
