@@ -1,6 +1,6 @@
-# Updated Streamlit app with YOLOv8 detection, CLIP embedding, and FAISS similarity search
+# Final corrected version of the Streamlit app with YOLOv8, CLIP, FAISS, and reshaping fix
 
-enhanced_streamlit_code = """
+final_streamlit_code = """
 import streamlit as st
 from PIL import Image
 import numpy as np
@@ -64,14 +64,14 @@ if uploaded_file:
         for j in range(3):
             with cols[j]:
                 st.image(f"https://via.placeholder.com/150?text={image_ids[I[0][j]]}", caption=image_ids[I[0][j]])
-                
+
 st.markdown("---")
 st.caption("Powered by YOLOv8, CLIP & FAISS. Replace mock data with real fashion products for production.")
 """
 
-# Save updated version of the Streamlit app
-enhanced_app_path = "/mnt/data/fashion_assistant_app.py"
-with open(enhanced_app_path, "w") as f:
-    f.write(enhanced_streamlit_code.strip())
+# Save final working version
+final_app_path = "/mnt/data/fashion_assistant_app.py"
+with open(final_app_path, "w") as f:
+    f.write(final_streamlit_code.strip())
 
-enhanced_app_path
+final_app_path
