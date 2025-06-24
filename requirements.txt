@@ -1,11 +1,7 @@
 streamlit
 torch
 torchvision
-numpy
 Pillow
-ftfy
-regex
-tqdm
 faiss-cpu
-git+https://github.com/openai/CLIP.git
+clip-anytorch
 ultralytics
