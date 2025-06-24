@@ -68,7 +68,7 @@ if uploaded_file:
 """
 
 # Save the app script
-streamlit_faiss_yolo_path = "/mnt/data/fashion_yolo_faiss_app.py"
+streamlit_faiss_yolo_path = "/mnt/data/fashion_assistant_app.py"
 with open(streamlit_faiss_yolo_path, "w") as f:
     f.write(streamlit_app_code.strip())
 
