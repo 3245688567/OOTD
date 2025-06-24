@@ -1,6 +1,7 @@
 # Final corrected version of the Streamlit app with YOLOv8, CLIP, FAISS, and reshaping fix
 
 final_streamlit_code = """
+import os
 import streamlit as st
 from PIL import Image
 import numpy as np
